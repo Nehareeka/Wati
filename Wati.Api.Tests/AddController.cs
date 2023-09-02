@@ -5,7 +5,7 @@ using Xunit;
 
 namespace Wati.Api.Tests
 {
-    public class UnitTest1
+    public class AddControllerTests
     {
         [Fact]
         public void AddTwoNumbers_ReturnsSum()
@@ -24,10 +24,10 @@ namespace Wati.Api.Tests
         }
 
         [Fact]
-        public void AddTwoNumbers_ReturnsSum()
+        public void MissingInput_ReturnsError()
         {
             //Arrange
-            RequestData data = new RequestData { Num1 = 1, Num2 = 2 };
+            RequestData data = new RequestData { Num2 = 2 };
 
             //Act
             AddController addCtrl = new AddController();

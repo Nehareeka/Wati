@@ -1,13 +1,12 @@
-﻿var url = "https://localhost:7002/add";
-
-function add() {
+﻿function add() {
     var a = (Number)(document.getElementById("num1").value);
     var b = (Number)(document.getElementById("num2").value);
+    var url = "https://localhost:7002/add";
 
-    computeSum(a, b);
+    computeSum(a, b, url);
 }
 
-function computeSum(a, b) {
+function computeSum(a, b, url) {
     fetch(url, {
         method: "POST",
         body: JSON.stringify({
@@ -22,5 +21,6 @@ function computeSum(a, b) {
         .then((json) => {
             var sum = json;
             document.getElementById("sum").innerText  = sum;
-        });
+        })
+        .catch(() => computeSum(a, b, "https://localhost:61874/add"));
 }

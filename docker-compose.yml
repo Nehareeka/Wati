@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  wati.web:
+    image: ${DOCKER_REGISTRY-}watiweb
+    build:
+      context: .
+      dockerfile: Wati.Web/Dockerfile
+
+  wati.api:
+    image: ${DOCKER_REGISTRY-}watiapi
+    build:
+      context: .
+      dockerfile: Wati.Api/Dockerfile
+
