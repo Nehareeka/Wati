@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ce9b201e-dd9f-4bf1-bcd5-d53ca405431b": {
+      "ProjectGuid": "ce9b201e-dd9f-4bf1-bcd5-d53ca405431b",
+      "DisplayName": "Wati.Api",
+      "ColorIndex": 0
+    },
+    "60dba7bf-51f4-4cae-af83-acd44f019a38": {
+      "ProjectGuid": "60dba7bf-51f4-4cae-af83-acd44f019a38",
+      "DisplayName": "Wati.Api.Tests",
+      "ColorIndex": 1
+    },
+    "ba2e80ca-cc49-45f9-b857-8edd18d697db": {
+      "ProjectGuid": "ba2e80ca-cc49-45f9-b857-8edd18d697db",
+      "DisplayName": "Wati.Web",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 3
+}
